@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-new
+spec:
+  containers:
+  - name: nginx-partha
+    image: nginx:11
+    ports:
+    - containerPort: 80
+  containers:
+  - name: afakharany-partha
+    image: afakharany/watcher:latest

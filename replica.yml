@@ -9,15 +9,15 @@ spec:
   selector:
     matchLabels:
       app: helloworld
-template:
-  metadata:
-    name: pod2
-    labels:
-      app: helloworld
-  spec:
-    containers:
-    - name: nodejs-demo
-      image: arjunachari12/k8s-demo
-      ports:
-    - name: nodejs-post
-      containerPort: 3000
+  template:
+    metadata:
+      name: pod2
+      labels:
+        app: helloworld
+    spec:
+      containers:
+      - name: nodejs-demo
+        image: arjunachari12/k8s-demo
+        ports:
+      - name: nodejs-post
+        containerPort: 3000

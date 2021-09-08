@@ -9,3 +9,11 @@ spec:
   selector:
     matchLabels:
       app: python-new
+  template:
+    metadata:
+      labels:
+        app: python-new
+    spec:
+      containers:
+      - name: my-python-image
+        image: arjunachari12/my-python-image

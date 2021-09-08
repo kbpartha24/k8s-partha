@@ -3,9 +3,9 @@ kind: ReplicaSet
 metadata:
   name: python-controller
   labels:
-    app: my-python-image
+    app: python-new
 spec:
   replicas: 5
   selector:
     matchLabels:
-      app: my-python-image
+      app: python-new

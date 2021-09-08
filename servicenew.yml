@@ -8,5 +8,5 @@ spec:
     targetPort: nodejs-post
     protocol: TCP
   selector:
-    app: my-python-image
+    app: python-new
   type: LoadBalancer

@@ -3,7 +3,7 @@ kind: ReplicaSet
 metadata:
   name: python-controller
   labels:
-    app: python-rs
+    app: my-python-image
 spec:
   replicas: 5
   selector:
